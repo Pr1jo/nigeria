@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import CoatOfArm from '../image/CoatOfArm.png'
 import './Header.css'
 
-function Header() {
+const Header = () => {
     return(
         <body>
             <div className='HeaderNav'>
@@ -27,14 +27,19 @@ function Header() {
                </div>
 
                <div id='container'>
-                <div>
-                    <div><img src={CoatOfArm} alt='Nigeria Coat of Arm' /></div>
-                    <div>
+                <div className='clearfix'>
+                    <img className='imageCoat' src={CoatOfArm} alt='Nigeria Coat of Arm' />
+                    <div className='HeaderText'>
                         <h2>Simplifying the discovery of government services.</h2>
                         <p>Our role is to help you discover and comprehend government benefits, programs, and information.</p>
                         <button className='Button'>Read More</button>
                     </div>
                 </div>
+
+                <div>
+                {/* <FontAwesomeIcon icon="fa-duotone fa-chevron-left" /> */}
+                </div>
+
                </div>
         </body>
                  
