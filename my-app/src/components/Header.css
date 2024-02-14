@@ -44,16 +44,8 @@ li a {
   .clearfix {
     display: flex;
     margin-top: 100px;
-    /* justify-content: space-between; */
-   /* justify-content: center; */
-   /* overflow: auto; */
+    
   }
-/* 
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
 
   .imageCoat{
     border: 1px solid lightgreen;
@@ -61,10 +53,6 @@ li a {
     height: 291px;
   }
 
-  .HeaderText{
-    /* margin: auto; */
-    /* margin: 10px 0 0 10px; */
-  }
 
   .Button{
     background-color: #04AA6D;
@@ -78,3 +66,5 @@ li a {
     margin: 4px 2px;
     cursor: pointer;
   }
+
+  

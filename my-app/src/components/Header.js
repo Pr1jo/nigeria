@@ -35,10 +35,13 @@ const Header = () => {
                         <button className='Button'>Read More</button>
                     </div>
                 </div>
-
-                <div>
-                {/* <FontAwesomeIcon icon="fa-duotone fa-chevron-left" /> */}
-                </div>
+        
+        <div className='faIcons'> 
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-minus"></i>
+        <i class="fa-solid fa-minus"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+        </div>
 
                </div>
         </body>
