@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
      <Header />
-     {/* <Body1 /> */}
+     <Body1 />
      {/* <Body2 />
      <Footer /> */}
     </div>

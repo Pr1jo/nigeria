@@ -36,10 +36,10 @@ const Header = () => {
                     </div>
                 </div>
         
-        <div className='faIcons'> 
+        <div id='faIcons'> 
         <i class="fa-solid fa-chevron-left"></i>
-        <i class="fa-solid fa-minus"></i>
-        <i class="fa-solid fa-minus"></i>
+        <i class="fa-solid fa-minus min"></i>
+        <i class="fa-solid fa-minus us"></i>
         <i class="fa-solid fa-chevron-right"></i>
         </div>
 

@@ -67,4 +67,38 @@ li a {
     cursor: pointer;
   }
 
-  
+  #faIcons{
+    margin: 20px 380px;
+  }
+
+.min{
+  padding-left: 20px;
+}
+
+.us{
+  padding-right: 20px;
+}
+
+#Body1{
+  margin: 0 auto;
+  max-width: 992px;
+}
+
+.Body1Grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  max-width: 992px;
+}
+
+
+.GridDiv {
+  border: 1px solid gray;
+  padding: 20px;
+  text-align: center;
+}
+
+.gridImg{
+  margin-top: 50px;
+}
