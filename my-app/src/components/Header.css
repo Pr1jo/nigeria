@@ -1,18 +1,37 @@
 * {
-    margin: 0 ;
+    margin: 0  auto;
     padding: 0 ;
   }
   
   .HeaderNav {
     padding: 20px 100px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
+    max-width: 992px;
   }
   
   .NavImg{
-    height: 80px;
-    width: 100px;
+    height: 34.83px;
+    width: 40.89px;
+    color: #FFFFFF;
+  }
+
+  .HeaderText{
+    width: 486px;
+    height: 246px;
+    gap: 39px;
+    margin: 0 auto;
+  }
+
+  .Header2{
+    width: 484px;
+    height: 94px;
+    font: Marianne;
+    font-weight: 700;
+    size: 39px;
+    line-height: 46.8px;
+    color: #3A3A3A;
   }
   
   .InputBar{
@@ -22,7 +41,7 @@
   ul {
     list-style-type: none;
     margin: 0;
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
     box-shadow: 0px 20px 18px -15px #888888;
     padding: 20px;
@@ -36,35 +55,41 @@ li a {
   }
 
   #container{
-    line-height: 1.6;
-    max-width: 992px;
-    margin: 0  auto;
+   top: 262px;
+   left: 144px;
+    width: 992px;
+    /* height: 417px; */
+    gap: 82px;
+    /* margin: 0 auto; */
   }
 
   .clearfix {
     display: flex;
     margin-top: 100px;
-    
+    /* flex-flow: row wrap; */
   }
 
   .imageCoat{
     border: 1px solid lightgreen;
-    width: 486px;
     height: 291px;
+    width: 486px;
   }
 
 
   .Button{
+    height: 39px;
+    width: 105px;
     background-color: #04AA6D;
     border: none;
     color: white;
-    padding: 5px 5px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    gap: 10px;
     cursor: pointer;
+    margin-top: 160px;
   }
 
   #faIcons{
@@ -81,24 +106,171 @@ li a {
 
 #Body1{
   margin: 0 auto;
-  max-width: 992px;
+  max-width: 1280px;
 }
 
-.Body1Grid {
-  display: grid;
-  gap: 50px;
-  grid-template-columns: auto auto auto auto;
-  padding: 10px;
-  max-width: 992px;
+.Body1Head{
+  padding-bottom: 20px;
+  margin: 0 0 0 60px;
+}
+
+.flexbox {
+  gap: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1100px;
+  /* height: 552px; */
 }
 
 
-.GridDiv {
-  border: 1px solid gray;
-  padding: 20px;
+.flexDiv {
+  border: 1px solid #DDDDDD;
+  border-radius: 1px;
+  padding: 14px;
+  /* gap: 21px; */
+  width: 200px;
+  height: 264px;
+  /* flex-grow: 2.5px; */
   text-align: center;
+  line-height: 24px;
+}
+
+.gridHead{
+  color: #01903C;
+  height: 48px;
+  width: 185px;
+  font: Marianne;
+  size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+.flexDiv p{
+  margin-top: 24px;
 }
 
 .gridImg{
-  margin-top: 50px;
+  width: 44px;
+  height: 44px;
 }
+
+
+.Body2Head{
+  width: 245px;
+  height: 37px;
+  margin-top: 47px;
+  margin-left: 104px;
+  gap: 10px;
+}
+
+.NewsFcta{
+  width: 992px;
+  height: 505px;
+  margin: 0 100PX;
+  top: 141px;
+  left: 144px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Fcta{
+  width: 486px;
+  height: 238px;
+  display: flex;
+  /* gap: 16px; */
+  border: 1px solid #DDDDDD;
+}
+
+.FCTAImg{
+  width: 210px;
+  height: 238px;
+}
+
+.FctaHead{
+  width: 254px;
+  height: 184px;
+  padding: 24px 24px 0px 0px;
+  gap: 16px;
+}
+
+.FctaHead h3{
+  color: #01662B;
+  width: 230px;
+  height: 72px;
+  font: Marianne;
+  font-weight: 700;
+  size: 20px;
+  line-height: 24px;
+}
+
+.FctaHead p{
+  width: 230px;
+  height: 72px;
+  font: Marianne;
+  font-weight: 400;
+  size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.fctaImg{
+  width: 14.5px;
+  height: 13.5px;
+  margin: 30px 0 0 230px;
+}
+
+.IbaHead{
+  width: 486px;
+  height: 238px;
+  border: 1px solid #DDDDDD;
+}
+
+.IbaText{
+  padding: 24px 0 0 0;
+}
+
+.IbaHead h3{
+  color: #01662B;
+  width: 450px;
+  height: 24px;
+  font-family: Marianne;
+  font-weight: 700;
+  size: 20px;
+  line-height: 24px;
+}
+
+.IbaHead p{
+  width: 450px;
+  height: 48px;
+  font: Marianne;
+  font-weight: 400;
+  size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.Cen{
+  width: 486px;
+  height: 238px;
+  border: 1px solid #DDDDDD ;
+  padding: 24px 0 0 0;
+  gap: 16px;
+}
+
+.CenHead{
+  width: 450px;
+  height: 48px;
+  font: Marianne;
+  line-height: 24px;
+}
+
+.CenHead h3{
+  color: #01662B;
+  font-weight: 700;
+  size: 20px;
+}
+

@@ -9,6 +9,7 @@ import Taxes from '../image/Taxes.jpg'
 import Voting from '../image/Voting.jpg'
 import Health from '../image/Health.jpg'
 import Military from '../image/Military.jpg'
+import FCTA from '../image/FCTA.jpg'
 
 
 
@@ -17,75 +18,71 @@ import Military from '../image/Military.jpg'
         <body>
             <div id='Body1'>
 
-                <div>
+                <div className='Body1Head'>
                     <h2>top services & topics</h2>
                 </div>
 
-                <div className='Body1Grid'>
-
-                    <div className='GridDiv'>
-                     <div>
-                     <img className='gridImg' src={Airplane} alt='Airplane'/>   
-                    <h3 className='gridHead'>Immigration And Citizenship </h3>
-                     <p>Learn about citizenship requirements and other related info.</p>
+                <div className='flexbox'>
+                    <div className='flexDiv'>
+                        <img className='gridImg' src={Airplane} alt='Airplane'/>
+                        <div className='gridiv'> 
+                        <h3 className='gridHead'>Immigration And Citizenship </h3>
+                        <p>Learn about citizenship requirements and other related info.</p>
+                        </div>
+                        <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
                     </div>
+
+                    <div className='flexDiv'>
+                    <img className='gridImg' src={Message} alt='Message'/>
+                    <h3 className='gridHead'>Complaints</h3>
+                    <p>File complains and more.</p>
                     <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
                     </div>
-                    
-                    <div className='GridDiv'>
-                        <div>
-                        <img className='gridImg' src={Message} alt='Message'/>
-                        <h3 className='gridHead'>Complaints</h3>
-                       <p>File complains and more.</p>
-                    </div>
+
+                    <div className='flexDiv'>
+                    <img className='gridImg' src={Health} alt='Health'/>
+                    <h3 className='gridHead'>Health</h3>
+                    <p>Health resources and benefits.</p>
                     <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
                     </div>
-                    
-                    
-                    <div className='GridDiv'>
-                        <img className='gridImg' src={Health} alt='Health'/>
-                        <h3 className='gridHead'>Health</h3>
-                       <p>Health resources and benefits.</p>
-                       <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
+
+                    <div className='flexDiv'>
+                    <img className='gridImg' src={Military} alt='Military'/>
+                    <h3 className='gridHead'>Military</h3>
+                    <p>How to join the military and it's benefits.</p>
+                    <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
                     </div>
 
-                     <div className='GridDiv'>
-                        <img className='gridImg' src={Military} alt='Military'/>
-                        <h3 className='gridHead'>Military</h3>
-                       <p>How to join the military and it's benefits.</p>
-                       <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
-                    </div>    
+                    <div className='flexDiv'>
+                    <img className='gridImg' src={Card} alt='Money And Credit'/>
+                    <h3 className='gridHead'>Money And Credit</h3>
+                    <p>Find government loans, grant and other benefits.</p>
+                    <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
+                    </div>
 
-                    <div className='GridDiv'>
-                        <img className='gridImg' src={Card} alt='Money And Credit'/>
-                        <h3 className='gridHead'>Money And Credit</h3>
-                       <p>Find government loans, grant and other benefits.</p>
-                       <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
-                    </div>    
+                    <div className='flexDiv'>
+                    <img className='gridImg' src={Business} alt='Small Business'/>
+                    <h3 className='gridHead'>Small Business</h3>
+                    <p>Learn about business and how to run it.</p>
+                    <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
+                    </div>
 
-                    <div className='GridDiv'>
-                        <img className='gridImg' src={Business} alt='Small Business'/>
-                        <h3 className='gridHead'>Small Business</h3>
-                       <p>Learn about business and how to run it.</p>
-                       <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
-                    </div>   
+                    <div className='flexDiv'>
+                    <img className='gridImg' src={Taxes} alt='Taxes'/>
+                    <h3 className='gridHead'>Taxes</h3>
+                    <p>Find out how to pay, refund.</p>
+                    <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
+                    </div>
 
-                     <div className='GridDiv'>
-                        <img className='gridImg' src={Taxes} alt='Taxes'/>
-                        <h3 className='gridHead'>Taxes</h3>
-                       <p>Find out how to pay, refund.</p>
-                       <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
-                    </div>     
-
-                    <div className='GridDiv'>
-                        <img className='gridImg' src={Voting} alt='Voting And Elections'/>
-                        <h3 className='gridHead'>Voting And Elections</h3>
-                       <p>All you need to know about voting and elections. </p>
-                       <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
-                    </div>    
-
+                    <div className='flexDiv'>
+                    <img className='gridImg' src={Voting} alt='Voting And Elections'/>
+                    <h3 className='gridHead'>Voting And Elections</h3>
+                    <p>All you need to know about voting and elections. </p>
+                    <img className='gridImg' src={GreenArrow} alt='GreenArrow'/>
+                    </div>
                 </div>
             </div>
+
         </body>
     );
 };

@@ -30,17 +30,19 @@ const Header = () => {
                 <div className='clearfix'>
                     <img className='imageCoat' src={CoatOfArm} alt='Nigeria Coat of Arm' />
                     <div className='HeaderText'>
+                        <div className='Header2'>
                         <h2>Simplifying the discovery of government services.</h2>
                         <p>Our role is to help you discover and comprehend government benefits, programs, and information.</p>
-                        <button className='Button'>Read More</button>
+                        </div>       
+                    <button className='Button'>Read More</button>
                     </div>
                 </div>
         
         <div id='faIcons'> 
-        <i class="fa-solid fa-chevron-left"></i>
-        <i class="fa-solid fa-minus min"></i>
-        <i class="fa-solid fa-minus us"></i>
-        <i class="fa-solid fa-chevron-right"></i>
+        <i class="fa-solid fa-chevron-left fa-2xl"></i>
+        <i class="fa-solid fa-minus min fa-2xl"></i>
+        <i class="fa-solid fa-minus us fa-2xl"></i>
+        <i class="fa-solid fa-chevron-right fa-2xl"></i>
         </div>
 
                </div>
