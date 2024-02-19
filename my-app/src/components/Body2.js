@@ -6,7 +6,7 @@ import GreenArrow from '../image/GreenArrow.jpg'
 
 const Body2 = () => {
     return(
-        
+
         <div id='Body2'>
 
 <div className='Body2Head'>
@@ -18,20 +18,23 @@ const Body2 = () => {
             <img className='FCTAImg' src={FCTA}  alt='Federal Capital Territory Administration'/>
 
         <div className='FctaHead'>
-       <h3>Reloction of FAAN Headquarters  from Abuja to Lagos. </h3>
+        <div className='NewsG'>
+        <h3>Reloction of FAAN Headquarters  from Abuja to Lagos. </h3>
         <p>Office space scarcity in Abuja initially made the move from Lagos appear impractical.</p>
-        <img className='fctaImg' src={GreenArrow} alt='GreenArrow'/>
         </div>
-        
+         <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      
     </div>
 
     <div className='IbaHead'>
         <div className='IbaText'>
             <h3>Ibadan Explosion</h3>
         <p>FG awaits forensic investigation of actual cause of tragic incident.</p>
-        <img className='fctaImg' src={GreenArrow} alt='GreenArrow'/>
         </div>  
+      <i class="fa-solid fa-arrow-right"></i>
     </div>
+
     <div className='Cen'>
         <div className='CenHead'>
             <h3>
@@ -40,10 +43,13 @@ const Body2 = () => {
             <p>
             Due to non-compliance of the Banks and their Boards.
             </p>
-            <img className='fctaImg' src={GreenArrow} alt='GreenArrow'/>
         </div>
+        <i class="fa-solid fa-arrow-right"></i>
     </div>
-    {/* <div className='Cen'></div> */}
+
+    
+    
+    {/* <div className='Center'></div> */}
 </div>
 
 </div>
@@ -51,4 +57,4 @@ const Body2 = () => {
 }
 
 
-export default Body2
+export default Body2;

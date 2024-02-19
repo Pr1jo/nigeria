@@ -11,7 +11,7 @@ function App() {
      <Header />
      <Body1 />
      <Body2 />
-     {/* <Footer /> */}
+     <Footer />
     </div>
   );
 }

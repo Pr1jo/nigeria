@@ -11,12 +11,12 @@ const Header = () => {
                     </div>
                     <div className='InputBar'>
                         <input type='text' placeholder='Search' className='SearchBar' />
-                        <button type='search'>Search</button>
+                        <button className='BarButton' type='search'><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                </div> 
+                </div> {/*HeaderNav*/}
                
                <div className='NavList'>
-                <ul>
+                <ul className='NavUOList'>
                     <li><a>All topics & services</a></li>
                     <li><a>Travel</a></li>
                     <li><a>Taxes</a></li>
@@ -24,20 +24,21 @@ const Header = () => {
                     <li><a>Government Benefits</a></li>
                     <li><a>About</a> </li>
                 </ul>
-               </div>
+               </div> {/*NavList */}
 
                <div id='container'>
-                <div className='clearfix'>
-                    <img className='imageCoat' src={CoatOfArm} alt='Nigeria Coat of Arm' />
-                    <div className='HeaderText'>
-                        <div className='Header2'>
-                        <h2>Simplifying the discovery of government services.</h2>
-                        <p>Our role is to help you discover and comprehend government benefits, programs, and information.</p>
-                        </div>       
-                    <button className='Button'>Read More</button>
+               <div className='clearfix'>
+                <img className='imageCoat' src={CoatOfArm} alt='Coat of Arm'/>
+                <div className='clearfixHug'>
+                    <div className='clear'>
+                    <h1>Simplifying the discovery of government services.</h1>
+                    <p>Our role is to help you discover and comprehend government benefits, programs, and information.</p>
+                    </div>   
+                    <div>
+                        <button className='Button'>Read more</button>
                     </div>
                 </div>
-        
+               </div>
         <div id='faIcons'> 
         <i class="fa-solid fa-chevron-left fa-2xl"></i>
         <i class="fa-solid fa-minus min fa-2xl"></i>
@@ -45,7 +46,7 @@ const Header = () => {
         <i class="fa-solid fa-chevron-right fa-2xl"></i>
         </div>
 
-               </div>
+               </div>{/*Container */}
         </body>
                  
 
@@ -53,4 +54,4 @@ const Header = () => {
     );
 }
 
-export default Header
+export default Header;
