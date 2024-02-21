@@ -12,13 +12,18 @@
   }
   
   .NavImg{
-    height: 34.83px;
-    width: 40.89px;
+    height: 50px;
+    width: 60px;
     color: #FFFFFF;
+    padding-top: 29px;
+  }
+
+  .InputBar{
+    display: flex;
   }
 
   .SearchBar{
-    width: 317px;
+    width: 200px;
     height: 34px;
     /* border-radius: 1px; */
     border: solid 1px black;
@@ -137,6 +142,8 @@
     /* display: flex;
     flex-wrap: wrap; */
     margin: 50px 280px;
+    /* margin: 70px 0 0 220px; */
+    width: 100%;
   }
 
 .min{
@@ -216,11 +223,11 @@
 }
 
 .NewsFcta{
-  max-width: 992px;
+  /* max-width: 992px; */
   /* height: 505px; */
-  margin: 0 100PX;
-  top: 141px;
-  left: 144px;
+  margin: 0 100px;
+  /* top: 141px;
+  left: 144px; */
   gap: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -243,13 +250,13 @@
   width: 254px;
   height: 184px;
   padding: 24px 0 0px 0px;
-  gap: 16px;
+  /* gap: 16px; */
 }
 
 .FctaHead h3{
   color: #01662B;
   width: 230px;
-  height: 72px;
+  /* height: 72px; */
   font: Marianne;
   font-weight: 700;
   size: 20px;
@@ -258,7 +265,7 @@
 
 .FctaHead p{
   width: 230px;
-  height: 72px;
+  /* height: 72px; */
   font: Marianne;
   font-weight: 400;
   size: 16px;
@@ -309,7 +316,7 @@
 }
 
 .IbaHead p{
-  width: 450px;
+  width: 358px;
   height: 48px;
   font: Marianne;
   font-weight: 400;
@@ -438,3 +445,90 @@
  font-weight: 400;
  font: Marianne;
 }
+
+.fa-bars{
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .HeaderNav{
+    width: 100%;
+    height: 64.23px;
+    padding: 8px 16px 30px 16px;
+    box-shadow: 0px 20px 18px -15px #888888;
+  }
+  
+  
+  .NavUOList{
+    display: none;
+  }
+  
+  .SearchBar{
+    display: none;
+  }
+
+  .BarButton{
+    background-color: white;
+  }
+  
+  .fa-magnifying-glass{
+    color: #01903C;
+    font-size: 25px;
+  }
+
+  .fa-bars{
+    display: block;
+    color: #01903C;
+    border: 0.5px solid #888888;
+    padding: 5px 10px;
+    font-size: 25px;
+    /* float: right; */
+  }
+  
+  #container{
+    width: 100%;
+    margin: 30px;
+  }
+
+  .clearfixHug{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  #faIcons{
+    margin: 70px 0 0 220px;
+    width: 100%;
+  }
+
+  .imageCoat{
+   width: 100%;
+  }
+
+  .Button{
+    width: 100%;
+  }
+
+  #Body1{
+    width: 100%;
+    margin: 30px;
+  }
+
+    
+  .flexDiv{
+    width: 100%;
+  }
+  
+  
+  .gridHead{
+    padding-left: 178px;
+  }
+
+  
+  }
