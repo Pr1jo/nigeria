@@ -4,6 +4,7 @@ import CoatOfArm from '../image/CoatOfArm.png'
 import Facebook from  '../image/Facebook.jpg'
 import Twitter from '../image/Twitter.jpg'
 import Instagram from '../image/Instagram.jpg'
+import COA from '../image/COA.jpg'
 
 
 
@@ -15,12 +16,12 @@ const Footer = () => {
                  <div className='FootContainer'>
 
                         <div className='FootLeft'>
-                           <div>
-                            <img className='FootImg' src={CoatOfArm} alt='Coat of Arm' />
+                           <div className='FootleftImg'>
+                            <img className='FootImg' src={COA} alt='Coat of Arm' />
                           </div>
 
-
-                 <div>
+                          <div className='FootText'>
+                             <div>
                        <div><h3>Quick Links</h3></div>
                  <div className='FootLinks'>
                     <ul className='QuickLinks'>
@@ -48,6 +49,9 @@ const Footer = () => {
 
                    </div>
                   </div>
+                          </div>
+
+                
 
                 </div> {/* FootLeft */}
 

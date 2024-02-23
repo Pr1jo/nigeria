@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Header.css'
 import FCTA from '../image/FCTA.jpg'
+import capital from '../image/capital.jpg'
 import GreenArrow from '../image/GreenArrow.jpg'
 
 
@@ -16,7 +17,7 @@ const Body2 = () => {
 <div className='NewsFcta'>
     <div className='Fcta'>
             <img className='FCTAImg' src={FCTA}  alt='Federal Capital Territory Administration'/>
-
+            <img className='capital' src={capital}  alt='Federal Capital Territory Administration' />
         <div className='FctaHead'>
         <div className='NewsG'>
         <h3>Reloction of FAAN Headquarters  from Abuja to Lagos. </h3>

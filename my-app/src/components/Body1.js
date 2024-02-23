@@ -27,7 +27,7 @@ import FCTA from '../image/FCTA.jpg'
                         <div className='gridiv'> 
                         <img className='gridImg' src={Airplane} alt='Airplane'/>
                         <h3 className='gridHead'>Immigration And Citizenship </h3>
-                        <p>Learn about citizenship requirements and other related info.</p>
+                        <p className='gridp'>Learn about citizenship requirements and other related info.</p>
 
                         </div>
                         <i class="fa-solid fa-arrow-right"></i>

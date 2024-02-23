@@ -1,25 +1,48 @@
 * {
     margin: 0 ;
     padding: 0 ;
+    /* box-sizing: border-box; */
   }
+
+  header{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* height: 84px; */
+    /* padding: 0 4rem; */
+  }
+
+  header .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    color: #01903C;
+    opacity: 0;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
   
   .HeaderNav {
-    padding: 20px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 992px;
+    width: 100%;
   }
   
   .NavImg{
-    height: 50px;
-    width: 60px;
+    height: 70px;
+    width: 80px;
     color: #FFFFFF;
-    padding-top: 29px;
+    padding: 20px 0 0 140px;
+    cursor: pointer;
   }
 
   .InputBar{
-    display: flex;
+    padding: 20px 170px 0 0;
   }
 
   .SearchBar{
@@ -36,14 +59,17 @@
     color: white;
     background-color: #01903C;
   }
+  
 
-  .HeaderText{
+  /* .HeaderText{
     width: 486px;
     height: 246px;
     gap: 39px;
     margin: 0 auto;
-  }
+  } */
 
+
+/* 
   .Header2{
     width: 484px;
     height: 94px;
@@ -52,10 +78,14 @@
     size: 39px;
     line-height: 46.8px;
     color: #3A3A3A;
-  }
+  } */
   
   .InputBar{
     padding-top : 30px;
+  }
+
+  .NavList{
+    width: 100%;
   }
 
   .NavUOList {
@@ -139,19 +169,18 @@
   }
 
   #faIcons{
-    /* display: flex;
-    flex-wrap: wrap; */
-    margin: 50px 280px;
-    /* margin: 70px 0 0 220px; */
-    width: 50%;
+   cursor: pointer;
+   width: 100%;
+   margin-top: 50px;
+   text-align: center;
   }
 
 .min{
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .us{
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 #Body1{
@@ -166,10 +195,10 @@
 .flexbox {
   gap: 10px;
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1100px;
+  width: 100%;
+  /* max-width: 1100px; */
   /* line-height: 24px; */
   /* height: 552px; */
 }
@@ -179,17 +208,17 @@
   border: 1px solid #DDDDDD;
   border-radius: 1px;
   padding: 14px;
-  height: 264px;
+  /* height: 264px; */
   /* gap: 21px; */
   width: 200px;
-  height: 264px;
+  /* height: 264px; */
   /* flex-grow: 2.5px; */
   text-align: center;
   /* line-height: 24px; */
 }
 
 .gridiv{
-  height: 171px;
+  height: 160px;
 }
 
 .gridHead{
@@ -205,6 +234,10 @@
 
 .flexDiv p{
   margin-top: 10px;
+}
+
+.fa-solid{
+  cursor: pointer;
 }
 
 .flexDiv .fa-arrow-right{
@@ -244,6 +277,10 @@
 .FCTAImg{
   width: 210px;
   height: 238px;
+}
+
+.capital{
+  display: none;
 }
 
 .FctaHead{
@@ -383,6 +420,10 @@
   gap: 3.53px;
 }
 
+.FootText{
+  display: flex;
+}
+
 .QuickLinks{
   list-style-type: none;
 }
@@ -401,6 +442,7 @@
   width: 120px;
   height: 61px;
   gap: 13px;
+  margin-left: 100px;
 }
 
 .Socials h3{
@@ -446,28 +488,58 @@
  font: Marianne;
 }
 
-.fa-bars{
-  display: none;
-}
-
-
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
   *{
     margin: 0;
     padding: 0;
   }
 
-  .HeaderNav{
+  header{
     width: 100%;
     height: 64.23px;
-    padding: 8px 16px 30px 16px;
+    padding: 8px 0px 30px 16px;
     box-shadow: 0px 20px 18px -15px #888888;
   }
-  
+
+  header .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  .NavUOList .responsive_nav{
+    transform: none;
+  }
+
+  .NavImg{
+    padding: 0;
+  }
+
+  .InputBar{
+    padding: 0;
+  }
   
   .NavUOList{
-    display: none;
+    visibility: hidden;
+  }
+
+  .InputBar{
+    position: relative;
+    margin-right: 40px;
   }
   
   .SearchBar{
@@ -481,20 +553,19 @@
   .fa-magnifying-glass{
     color: #01903C;
     font-size: 25px;
+    cursor: pointer;
   }
 
-  .fa-bars{
-    display: block;
-    color: #01903C;
-    border: 0.5px solid #888888;
-    padding: 5px 10px;
-    font-size: 25px;
-    /* float: right; */
-  }
+  
   
   #container{
     width: 100%;
-    margin: 30px;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  .clearfix{
+    width: 100%;
   }
 
   .clearfixHug{
@@ -502,13 +573,25 @@
     font-size: 20px;
   }
 
+  .clear h1{
+    width: 420px;
+    margin-left: 10px;
+  }
+
+
+  .clear p{
+    width: 420px;
+    margin-left: 10px;
+    margin-top: 60px;
+  }
+
   #faIcons{
-    margin: 70px 0 0 220px;
     width: 100%;
   }
 
   .imageCoat{
-   width: 100%;
+   width: 420px;
+   margin: 20px;
   }
 
   .Button{
@@ -517,18 +600,129 @@
 
   #Body1{
     width: 100%;
-    margin: 30px;
+    margin: 170px 0 0 10px;
   }
 
     
   .flexDiv{
-    width: 100%;
+    width: 420px;
   }
   
   
   .gridHead{
-    padding-left: 178px;
+    width: 420px;
+    margin-left: -18px;
   }
 
-  
+
+  #Body2{
+    width: 100%;
+    margin: 30px 0 0 10px;
   }
+
+  .Body2Head{
+    margin: 150px 0 0 10px;
+  }
+
+  .NewsFcta{
+    margin:20px 0 0 10px ;
+  }
+
+  .Fcta{
+    display: block;
+    width: 420px;
+    height: 460px;
+  }
+
+  .FCTAImg{
+    display: none;
+  }
+
+  .capital{
+    display: block;
+    width: 420px;
+    height: 183px;
+  }
+
+  .NewsG{
+    margin: 20px 0 0 30px;
+  }
+
+  .FctaHead .fa-arrow-right{
+    margin: 0 0 10px 380px;
+    font-size: 25px;
+  }
+
+  .IbaHead{
+    display: block;
+    width: 420px;
+    height: 248px;
+  }
+
+
+  .IbaHead .fa-arrow-right{
+    margin: 0 0 10px 380px;
+    font-size: 25px;
+  }
+
+  .Cen{
+    display: block;
+    width: 420px;
+    height: 248px;
+  }
+
+  .Cen .fa-arrow-right{
+    margin: 0 0 10px 380px;
+    font-size: 25px;
+  }
+
+
+div.IbaHead {order: 1;}
+div.Fcta {order: 2;}
+div.Cen {order: 3;}
+
+
+
+  #Footer{
+    width: 100%;
+    /* margin: 170px 0 0 10px; */
+  }
+
+
+  .FootContainer{
+    margin-left: -80px;
+  }
+
+  .FootleftImg{
+    width: 100%;
+  }
+/* 
+  .FootImg{
+    margin-left: -80px;
+  } */
+
+  .FootRight{
+    width: 100%;
+  }
+/* 
+  .FootSub h1{
+    padding-right: 5000px ;
+  } */
+  
+
+  .Input{
+    width: 98%;
+    margin-left: -20px;
+  }
+
+  .Button{
+    width: 485px;
+    margin-left: -20px;
+  }
+  
+  .CopyRight{
+    width: 100%;
+    margin: 20px;
+  }
+
+}
