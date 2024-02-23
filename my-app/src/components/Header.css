@@ -397,6 +397,7 @@
   /* height: 533px; */
   background-color: #F6F6F6;
   margin-top: 100px;
+  width: 100%;
 }
 
 .FootContainer{
@@ -469,7 +470,7 @@
 }
 
 .Input{
-  width: 317px;
+  width: 300px;
   height: 30px;
   border: 1px solid black;
   padding: 9px 14px 9px 14px;
