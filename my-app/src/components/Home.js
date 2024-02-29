@@ -3,12 +3,20 @@ import CoatOfArm from '../image/CoatOfArm.png'
 import './Header.css'
 import { useRef } from 'react'
 import{ FaBars, FaTimes } from 'react-icons/fa'
+import NavBar from './NavBar'
+import arrow from '../image/arrow.png'
+import Body1 from './Body1'
+import Body2 from './Body2'
+import Footer from './Footer'
 
 
 const Home = () =>{
     return(
-        <>
-         <div id='container'>
+
+        <div>
+            
+         <body>
+            <div id='container'>
                 <div className='clearfix'>
                  <img className='imageCoat' src={CoatOfArm} alt='Coat of Arm'/>
                  <div className='clearfixHug'>
@@ -22,14 +30,19 @@ const Home = () =>{
                  </div>
                 </div>
          <div id='faIcons'> 
-         <i class="fa-solid fa-chevron-left fa-2xl"></i>
-         <i class="fa-solid fa-minus min fa-2xl"></i>
-         <i class="fa-solid fa-minus us fa-2xl"></i>
-         <i class="fa-solid fa-chevron-right fa-2xl"></i>
+         <img className='arrow' src={arrow} alt='Coat of Arm'/>
          </div>
 
                 </div>
-        </>
+         </body>
+         <Body1/>
+         <Body2 />
+         <Footer />
+
+        </div>
+    
+        
+         
     )
 }
 

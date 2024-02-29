@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import './Header.css'
-import FCTA from '../image/FCTA.jpg'
-import capital from '../image/capital.jpg'
-import GreenArrow from '../image/GreenArrow.jpg'
+import FCTA from '../image/FCTA.png'
+import capital from '../image/capital.png'
+import GreenArrow from '../image/GreenArrow.png'
 
 
 const Body2 = () => {

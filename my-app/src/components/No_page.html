@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav ref={navRef}>
+
+        <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+               <FaTimes />
+           </button>
+
+   <div className='NavList'>
+           <ul className='NavUOList'>
+               <li><a href='/#'>All Topics & Services</a></li>
+               <li><a href='/#'>Travel</a></li>
+                <li><a  href='/#'>Taxes</a></li>
+                <li><a  href='/#'>Scams & Fraud</a></li>
+                <li><a  href='/#'>Government Benefits</a></li>
+                <li><a  href='/#'>About</a> </li>
+            </ul>
+           </div> {/*NavList */}
+          
+   </nav>
+
+   <button className='nav-btn ' onClick={showNavbar}>
+       <FaBars />
+   </button>
+
+
+
+
+
+   {/* <React.Fragment>
+    <Header />
+  </React.Fragment>
+ <Home />
+ <Body1 />
+ <Body2 />
+ <Footer /> */}
+
+
+
+
+
+
+
+   const menuData = [
+   { 
+       label:"All topics & services",
+       submenu: [ { label:"Complaints"}, { label:"Rehabilitation"}, { label:"Disability services "}, { label:"Nigeria Health Department"}, { label:"Disasters & Emergency"}, { label:"Education"}, { label:"Government Benefits"}, { label:"Housing Help"}, { label:"Law & Legal Issues"}, { label:"Money & Credit"}, { label:"Small Business"}, { label:"Voting & Elections"},]
+   },
+   { label:"Travel" },
+   { label:"Taxes" },
+   { label:"Scams & Fraud" },
+   { label:"Government Benefits" },
+   { label:"About" }
+]
+
+const toggleSubMenu = (e) => {
+   e.stopPropagation();
+   let submenu = e.target.querySelector("ul");
+
+   if(!submenu) return;
+
+   if(submenu.style.display === "none" || !submenu.style.display) {
+       submenu.style.display = "block";
+   }else{
+       submenu.style.display = "none";
+   }
+};
+
+const renderSubMenu = (subMenu) => {
+   return (
+       <ul className='submenu'>
+       {subMenu.map((subItem,index) => (
+           <li key={index} onClick={toggleSubMenu}>
+               {subItem.label}
+               {subItem.submenu && renderSubMenu(subItem.submenu)}
+           </li>
+       ))}
+   </ul>
+   )
+};
+
+
+
+   <div className='NavList'>
+    <ul className='NavUOList'>
+        {menuData.map((item,index) => (
+            <li key={index} onClick={toggleSubMenu}>
+                {item.label}
+                {item.submenu && renderSubMenu(item.submenu)}
+            </li>
+        ))}
+    </ul>
+</div>
+
+</body>
+</html>

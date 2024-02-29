@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css'
-import Airplane from '../image/Airplane.jpg'
-import Message from '../image/Message.jpg'
-import Business from '../image/Business.jpg'
-import GreenArrow from '../image/GreenArrow.jpg'
-import Card from '../image/Card.jpg'
-import Taxes from '../image/Taxes.jpg'
-import Voting from '../image/Voting.jpg'
-import Health from '../image/Health.jpg'
-import Military from '../image/Military.jpg'
-import FCTA from '../image/FCTA.jpg'
+import Airplane from '../image/Airplane.png'
+import Message from '../image/Message.png'
+import Business from '../image/Business.png'
+import GreenArrow from '../image/GreenArrow.png'
+import Card from '../image/Card.png'
+import Taxes from '../image/Taxes.png'
+import Voting from '../image/Voting.png'
+import Health from '../image/Health.png'
+import Military from '../image/Military.png'
+import FCTA from '../image/FCTA.png'
 
 
 
@@ -39,7 +40,7 @@ import FCTA from '../image/FCTA.jpg'
                     <h3 className='gridHead'>Complaints</h3>
                     <p>File complains and more.</p>
                         </div>
-                     <i class="fa-solid fa-arrow-right"></i>
+                    <Link to='/Complian'><i class="fa-solid fa-arrow-right"></i></Link>
                     </div>
 
                     <div className='flexDiv'>

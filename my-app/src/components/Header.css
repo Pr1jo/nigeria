@@ -4,13 +4,6 @@
     /* box-sizing: border-box; */
   }
 
-  header{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    /* height: 84px; */
-    /* padding: 0 4rem; */
-  }
 
   header .nav-btn{
     padding: 5px;
@@ -25,12 +18,20 @@
     margin-top: 20px;
   }
 
+  nav a.active{
+    text-decoration: underline;
+    font-weight: bold;
+  }
   
   .HeaderNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .submenu{
+    display: none;
   }
   
   .NavImg{
@@ -86,9 +87,37 @@
 
   .NavList{
     width: 100%;
+    /* position: relative; */
+    /* display: inline-block; */
   }
 
+
+/*   
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #01662B}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
   .NavUOList {
+    cursor: pointer;
+    gap: 20px;
     list-style-type: none;
     margin: 0;
     justify-content: center;
@@ -102,6 +131,8 @@
 .NavUOList li a {
     padding: 16px;
     text-decoration: none;
+    color: black;
+    /* border-right: 1px dashed #888888; */
   }
 
   #container{
@@ -146,7 +177,7 @@
   }
 
   .imageCoat{
-    border: 1px solid lightgreen;
+    /* border: 1px solid #01662B; */
     height: 291px;
     width: 486px;
   }
@@ -170,7 +201,7 @@
 
   #faIcons{
    cursor: pointer;
-   width: 100%;
+   /* width: 100%; */
    margin-top: 50px;
    text-align: center;
   }
@@ -403,10 +434,9 @@
 .FootContainer{
   display: flex;
   flex-wrap: wrap;
-  /* width: Hug (993px);
-  height: Hug (247px); */
-  gap: 100px;
-  padding: 106px 0 106px 100px;
+  justify-content: center;
+  padding-top: 144px;
+  gap: 50px;
 }
 
 .FootLeft{
@@ -489,7 +519,15 @@
  font: Marianne;
 }
 
-@media only screen and (max-width: 600px) {
+
+.ComHead{
+  display: flex;
+  /* width: 100%; */
+  gap: 10px;
+  margin-left: 140px;
+}
+
+@media only screen and (max-width: 1024px) {
 
   *{
     margin: 0;
@@ -497,13 +535,16 @@
   }
 
   header{
-    width: 100%;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
     height: 64.23px;
     padding: 8px 0px 30px 16px;
     box-shadow: 0px 20px 18px -15px #888888;
   }
 
   header .nav-btn{
+    margin-left: -40px;
     visibility: visible;
     opacity: 1;
   }
@@ -515,11 +556,27 @@
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
     transition: 1s;
-    transform: translateY(-100vh);
+    transform: translateY(-150vh);
+  }
+
+  header .responsive_nav{
+    transform: none;
+  }
+
+  nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a{
+    text-decoration: none;
+    font-size: 3rem;
   }
 
   .NavUOList .responsive_nav{
@@ -533,9 +590,28 @@
   .InputBar{
     padding: 0;
   }
+
+  .NavList{
+    height: 100%;
+  }
   
   .NavUOList{
-    visibility: hidden;
+    visibility: visible;
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px ;
+  }
+
+  .NavUOList li{
+    padding: 12px 0 20px;
+    border-bottom: 1px dashed #888888;
+  }
+
+  .NavUOList li a{
+    color: black;
+    font-size: 20px;
   }
 
   .InputBar{
@@ -588,6 +664,7 @@
 
   #faIcons{
     width: 100%;
+    text-align: center;
   }
 
   .imageCoat{
@@ -627,6 +704,7 @@
 
   .NewsFcta{
     margin:20px 0 0 10px ;
+    width: 100%;
   }
 
   .Fcta{
@@ -691,12 +769,15 @@ div.Cen {order: 3;}
 
 
   .FootContainer{
-    margin-left: -80px;
-  }
-
-  .FootleftImg{
+    margin-top: 58px;
+    margin-left: 16px;
     width: 100%;
   }
+
+/* 
+  .FootleftImg{
+    width: 100%;
+  } */
 /* 
   .FootImg{
     margin-left: -80px;
@@ -712,18 +793,16 @@ div.Cen {order: 3;}
   
 
   .Input{
-    width: 98%;
-    margin-left: -20px;
+    width: 358px;
   }
 
   .Button{
-    width: 485px;
-    margin-left: -20px;
+    width: 358px;
   }
   
   .CopyRight{
     width: 100%;
-    margin: 20px;
+    margin: 70px 0 0 16px;
   }
 
 }
