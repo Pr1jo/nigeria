@@ -3,6 +3,7 @@ import './Header.css'
 import FCTA from '../image/FCTA.png'
 import capital from '../image/capital.png'
 import GreenArrow from '../image/GreenArrow.png'
+import { Link } from 'react-router-dom'
 
 
 const Body2 = () => {
@@ -23,7 +24,7 @@ const Body2 = () => {
         <h3>Reloction of FAAN Headquarters  from Abuja to Lagos. </h3>
         <p>Office space scarcity in Abuja initially made the move from Lagos appear impractical.</p>
         </div>
-         <i class="fa-solid fa-arrow-right"></i>
+        <Link to='/Faan'> <i class="fa-solid fa-arrow-right"></i></Link>
         </div>
       
     </div>
@@ -33,7 +34,7 @@ const Body2 = () => {
             <h3>Ibadan Explosion</h3>
         <p>FG awaits forensic investigation of actual cause of tragic incident.</p>
         </div>  
-      <i class="fa-solid fa-arrow-right"></i>
+        <Link to='/Faan'> <i class="fa-solid fa-arrow-right"></i></Link>
     </div>
 
     <div className='Cen'>
@@ -45,7 +46,7 @@ const Body2 = () => {
             Due to non-compliance of the Banks and their Boards.
             </p>
         </div>
-        <i class="fa-solid fa-arrow-right"></i>
+        <Link to='/Faan'> <i class="fa-solid fa-arrow-right"></i></Link>
     </div>
 
     

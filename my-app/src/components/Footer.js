@@ -5,6 +5,7 @@ import Facebook from  '../image/Facebook.jpg'
 import Twitter from '../image/Twitter.jpg'
 import Instagram from '../image/Instagram.jpg'
 import COA from '../image/COA.jpg'
+import { NavLink, Link } from 'react-router-dom'
 
 
 
@@ -17,7 +18,7 @@ const Footer = () => {
 
                         <div className='FootLeft'>
                            <div className='FootleftImg'>
-                            <img className='FootImg' src={COA} alt='Coat of Arm' />
+                            <Link to='/'><img className='FootImg' src={COA} alt='Coat of Arm' /></Link>
                           </div>
 
                           <div className='FootText'>

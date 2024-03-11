@@ -40,7 +40,7 @@ import FCTA from '../image/FCTA.png'
                     <h3 className='gridHead'>Complaints</h3>
                     <p>File complains and more.</p>
                         </div>
-                    <Link to='/Complian'><i class="fa-solid fa-arrow-right"></i></Link>
+                    <Link to='/Complain'><i class="fa-solid fa-arrow-right"></i></Link>
                     </div>
 
                     <div className='flexDiv'>

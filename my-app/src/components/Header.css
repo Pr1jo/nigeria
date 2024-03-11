@@ -1,7 +1,12 @@
+@font-face {
+  font-family: Marianne ;
+  src: url('Marianne-Regular.otf');
+}
+
 * {
     margin: 0 ;
     padding: 0 ;
-    /* box-sizing: border-box; */
+    font-family: Marianne;
   }
 
 
@@ -20,7 +25,8 @@
 
   nav a.active{
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: bold; 
+    color: green;
   }
   
   .HeaderNav {
@@ -49,7 +55,6 @@
   .SearchBar{
     width: 200px;
     height: 34px;
-    /* border-radius: 1px; */
     border: solid 1px black;
   }
 
@@ -62,58 +67,10 @@
   }
   
 
-  /* .HeaderText{
-    width: 486px;
-    height: 246px;
-    gap: 39px;
-    margin: 0 auto;
-  } */
-
-
-/* 
-  .Header2{
-    width: 484px;
-    height: 94px;
-    font: Marianne;
-    font-weight: 700;
-    size: 39px;
-    line-height: 46.8px;
-    color: #3A3A3A;
-  } */
-  
   .InputBar{
     padding-top : 30px;
   }
 
-  .NavList{
-    width: 100%;
-    /* position: relative; */
-    /* display: inline-block; */
-  }
-
-
-/*   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #01662B}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  } */
 
   .NavUOList {
     cursor: pointer;
@@ -122,17 +79,51 @@
     margin: 0;
     justify-content: center;
     display: flex;
-    box-shadow: 0px 20px 18px -15px #888888;
+    box-shadow: 0px 15px 18px -15px #888888;
     padding: 20px;
     border-top: 0.2px solid grey;
   }
 
 
-.NavUOList li a {
-    padding: 16px;
+.NavUOList p a {
     text-decoration: none;
     color: black;
-    /* border-right: 1px dashed #888888; */
+  }
+
+  .Nav-Sub{
+    position: relative;
+  }
+
+  .nav-sub-menu{
+    padding:20px;
+    position: absolute;
+    box-shadow: 0px 10px 10px -15px  ;
+    left: -170px;
+  }
+
+  .nav-sub-menu ul{
+    display: flex;
+  }
+
+  .nav-sub-menu li{
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .nav-sub-menu li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-sub-menu li a:active{
+    /* background-color: #888888; */
+    color: blue;
+  }
+
+  .navr{
+    border-right: 1px solid #888888;
+    padding-right: 10px ;
   }
 
   #container{
@@ -153,6 +144,7 @@
   }
 
   .clear{
+    margin-top: 20px;
     width: Hug (486px);
     height: Hug (168px);
   }
@@ -196,7 +188,7 @@
     font-size: 16px;
     gap: 10px;
     cursor: pointer;
-    margin-top: 90px;
+    margin-top: 67px;
   }
 
   #faIcons{
@@ -264,7 +256,7 @@
 }
 
 .flexDiv p{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .fa-solid{
@@ -409,7 +401,7 @@
 }
 
 .CenHead{
-  width: 450px;
+  /* width: 450px; */
   height: 184px;
   font: Marianne;
   line-height: 24px;
@@ -516,7 +508,10 @@
  margin-top: 150px;
  size: 16px;
  font-weight: 400;
- font: Marianne;
+}
+
+#Home2{
+  margin-left: 100px;
 }
 
 
@@ -524,8 +519,125 @@
   display: flex;
   /* width: 100%; */
   gap: 10px;
-  margin-left: 140px;
+  /* margin-left: 140px; */
 }
+
+
+.ComContain{
+  /* width: 100%; */
+  display: flex;
+  /* height: Hug (291px); */
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.ComHead2{
+  width: 487px ;
+  /* height: 149px ; */
+}
+
+.ComHead2 h1{
+  margin-top: 40px;
+}
+
+.ComHead2 p{
+  margin-top: 40px;
+  width: 486px ;
+  /* height: 78px; */
+  font-size: 17px;
+}
+
+/* .PolyImg{
+  width: 487px ;
+  height: 279px ;
+} */
+
+
+
+#Body22{
+  margin: 150px 100px;
+}
+
+#Bank2{
+  margin:  100px;
+}
+
+.BankFile{
+  width: 570px;
+  gap: 10px;
+}
+
+.Bankbranch{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.FirstManger{
+  width: 400px;
+  /* line-height: 32px; */
+}
+
+.BankFcta{
+  visibility: hidden;
+}
+
+.BankIbaHead{
+  margin-top: 30px;
+}
+
+#Faan{
+  margin: 0px 100px;
+}
+
+.Relocate h1{
+  width: 450px;
+  margin-top: 100px;
+}
+
+.line{
+  margin-top: 20px;
+  border-bottom: solid 0.5px #888888;
+}
+
+#Faan2{
+  margin: 47px 100px;
+}
+
+.Faan2Container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Faan2Body{
+  width: 450px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.Faan2p{
+  margin-bottom: 30px;
+}
+
+.FaanIbaHead{
+  margin-left: 20px;
+}
+
+#Faan3{
+  margin: 100px;
+}
+
+
+.Faan3Con{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 50px;
+}
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -573,11 +685,10 @@
     top: 2rem;
     right: 2rem;
   }
-
+/* 
   nav a{
     text-decoration: none;
-    font-size: 3rem;
-  }
+  } */
 
   .NavUOList .responsive_nav{
     transform: none;
@@ -604,14 +715,20 @@
     padding-top: 100px ;
   }
 
-  .NavUOList li{
-    padding: 12px 0 20px;
+  .NavUOList p{
+    padding: 12px 10px 20px;
     border-bottom: 1px dashed #888888;
   }
 
-  .NavUOList li a{
+  .NavUOList p a{
+    text-decoration: none;
     color: black;
     font-size: 20px;
+  }
+
+
+  .NavUOList p a:active{
+    font-size: bold;
   }
 
   .InputBar{
@@ -805,4 +922,55 @@ div.Cen {order: 3;}
     margin: 70px 0 0 16px;
   }
 
+
+  #Home2{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  .ComHead2 p{
+    width: 358px;
+  }
+
+/* 
+  .PolyImg{
+    margin-top: 20px;
+    width: 100%;
+    height: 214.36px ;
+  } */
+
+  #Body22{
+    width: 100%;
+    margin: 30px 0 0 10px;
+  }
+
+  #Home2{
+    width: 100%;
+    margin: 30px 0 0 10px;
+  }
+
+  #Bank2{
+    width: 100%;
+    margin: 30px 0 0 10px;
+  }
+
+  .BankFcta{
+    visibility: visible;
+    margin-top: 30px;
+  }
+
+  .FaanIbaHead{
+    visibility: hidden;
+  }
+
+  #Faan3{
+   
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hideOnDesktop {
+    display: none;
+  }
 }
